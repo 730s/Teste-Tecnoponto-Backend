@@ -20,11 +20,14 @@ A solução encontrada foi fazer **Batch Requests** (requisições em lote). Pes
 
 Os retornos da aplicação foram padronizados com os nomes em **português**, assim como solicitado no desafio. Portanto, a variável de filtro `nome` deve ser passada em português também.
 
+### Utilização da API
+
+Os retornos da aplicação foram padronizados com os nomes em **português**, assim como solicitado no desafio. Portanto, a variável de filtro `nome` deve ser passada em português também.
+
 Exemplo de requisição:
 ```http
-[http://127.0.0.1:8000/api/personagens?nome=Rick](http://127.0.0.1:8000/api/personagens?nome=Rick)
- ```
-
+GET [http://127.0.0.1:8000/api/personagens?nome=Rick](http://127.0.0.1:8000/api/personagens?nome=Rick)
+```
 **Implementações / Melhorias possíveis**
 
 Entendo que existem outras implementações possíveis que poderiam enriquecer o projeto, tais como:
