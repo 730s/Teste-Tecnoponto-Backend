@@ -7,8 +7,8 @@ class TranslateHelper
     public static function translateCharacterStatus(string $status)
     {
         return match ($status) {
-            'alive' => 'Vivo',
-            'dead' => 'Morto',
+            'Alive' => 'Vivo',
+            'Dead' => 'Morto',
             'unknown' => 'Desconhecido',
             default => $status
         };

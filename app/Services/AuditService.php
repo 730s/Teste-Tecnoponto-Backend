@@ -8,6 +8,6 @@ class AuditService
 {
     public function listLogs()
     {
-        return SearchLogs::orderBy('search_at', 'desc')->get();
+        return SearchLogs::orderBy('searched_at', 'desc')->get();
     }
 }
