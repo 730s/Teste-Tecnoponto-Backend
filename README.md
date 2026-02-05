@@ -16,9 +16,6 @@ Enfrentei um problema de *rate limit* onde a aplicação estava fazendo *n+1* re
 
 A solução encontrada foi fazer **Batch Requests** (requisições em lote). Pesquisei para entender o funcionamento e implementei as chamadas agrupadas. Para evitar novos problemas de bloqueio da API, optei pela exibição padrão de **20 personagens** (conforme o retorno nativo da API externa). Sei que, caso fosse necessário exibir tudo, seria possível fazer um "loop" atendendo a condição de que o `info.next` da API externa fosse igual a nulo.
 
-### Utilização da API
-
-Os retornos da aplicação foram padronizados com os nomes em **português**, assim como solicitado no desafio. Portanto, a variável de filtro `nome` deve ser passada em português também.
 
 ### Utilização da API
 
@@ -26,7 +23,7 @@ Os retornos da aplicação foram padronizados com os nomes em **português**, as
 
 Exemplo de requisição:
 ```http
-GET [http://127.0.0.1:8000/api/personagens?nome=Rick](http://127.0.0.1:8000/api/personagens?nome=Rick)
+GET http://127.0.0.1:8000/api/personagens?nome=Rick
 ```
 **Implementações / Melhorias possíveis**
 
@@ -45,7 +42,7 @@ Siga os passos abaixo para executar a aplicação localmente:
 
 1.  **Clonar o repositório**
     ```bash
-    git clone [https://github.com/730s/Teste-Tecnoponto-Backend]
+    git clone https://github.com/730s/Teste-Tecnoponto-Backend
     ```
 
 2.  **Acessar a pasta do projeto**:
